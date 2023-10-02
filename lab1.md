@@ -210,8 +210,42 @@ __Working Directory Strucutre__
 ```
 
 __Why this output?__
-> The java command is used to compile and run .java files or run .class files.
+> The java command is used to compile and run .java files or run .class files. The first argument is "Hello" which specify which .class file we're executing. The second argument is "messages/en-us.txt" which specify for the text to be printed out by the java program. The displayed "Hello World!" is the text inside the en-us.txt. 
 
 __Error? If so, why it's an error__
 > No, this is not an error.
 
+### Example 9
+__Code__
+```sh
+[user@sahara ~/lecture1]$ cat Hello.java
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+public class Hello {
+  public static void main(String[] args) throws IOException {
+    String content = Files.readString(Path.of(args[0]), StandardCharsets.UTF_8);    
+    System.out.println(content);
+  }
+```
+
+__Working Directory Strucutre__
+```
+├── lecture1
+│   ├── messages
+│   │   ├── en-us.txt
+|   │   ├── es-mx.txt
+│   │   ├── zh-cn.txt
+│   │   ├── zh-tw.txt
+│   ├── Hello.class
+│   ├── Hello.java
+│   ├── README
+```
+
+__Why this output?__
+> The "cat" command printed out the file specify in the first argument. In this case, "Hello.java" specified, so the output displayed in the command line is the java program in plain text. 
+
+__Error? If so, why it's an error__
+> No, this is not an error.
