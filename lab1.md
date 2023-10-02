@@ -77,12 +77,64 @@ __Working Directory Strucutre__
 ```
 
 __Why this output?__
-> The "ls" command, short for "list", help you list out all the files and directories inside the directory that I'm in, which is "/home".
+> Since I'm now inside the lecture1 directory, after I entered the "pwd" command, the displayed output will be "/home/lecture1"
 
 __Error? If so, why it's an error__
 > No, this is not an error.
 
 ## Examples of using the command with a path to a directory as an argument
+### Example 4
+__Code__
+```sh
+[user@sahara ~/lecture1]$ cd messages/
+[user@sahara ~/lecture1/messages]$ 
+```
+
+__Working Directory Strucutre__
+```
+├── lecture1
+│   ├── messages
+│   │   ├── en-us.txt
+|   │   ├── es-mx.txt
+│   │   ├── zh-cn.txt
+│   │   ├── zh-tw.txt
+│   ├── Hello.class
+│   ├── Hello.java
+│   ├── README
+```
+
+__Why this output?__
+> The "cd" command is exectued with a path to a directory as an argument. Since "cd" stands for change directory, the current directory of the terminal is changed. The directory we use as an argument is "messages/", which will take the current directory from "/home/lecture1" to "/home/lecture1/messages".
+
+__Error? If so, why it's an error__
+> No, this is not an error.
+
+### Example 5
+__Code__
+```sh
+[user@sahara ~]$ cd lecture1/
+[user@sahara ~/lecture1]$ 
+```
+
+__Working Directory Strucutre__
+```
+├── home
+│   ├── lecture1
+│   │   ├── messages
+│   │   │   ├── en-us.txt
+│   │   │   ├── es-mx.txt
+│   │   │   ├── zh-cn.txt
+│   │   │   ├── zh-tw.txt
+│   │   ├── Hello.class
+│   │   ├── Hello.java
+│   │   ├── README
+```
+
+__Why this output?__
+> The "cd" command is exectued with a path to a directory as an argument. Since "cd" stands for change directory, the current directory of the terminal is changed. The directory we use as an argument is "lecture1/", which will take the current directory from "/home" to "/home/lecture1".
+
+__Error? If so, why it's an error__
+> No, this is not an error.
 
 ## Examples of using the command with a path to a file as an argument
 
