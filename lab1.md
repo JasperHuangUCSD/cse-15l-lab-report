@@ -9,7 +9,7 @@ __Code__
 /home
 ```
 
-__Working Directory Strucutre__
+__Working Directory Structure__
 ```
 ├── home
 │   ├── lecture1
@@ -36,7 +36,7 @@ __Code__
 lecture1
 ```
 
-__Working Directory Strucutre__
+__Working Directory Structure__
 ```
 ├── home
 │   ├── lecture1
@@ -63,7 +63,7 @@ __Code__
 /home/lecture1
 ```
 
-__Working Directory Strucutre__
+__Working Directory Structure__
 ```
 ├── lecture1
 │   ├── messages
@@ -90,7 +90,7 @@ __Code__
 [user@sahara ~/lecture1/messages]$ 
 ```
 
-__Working Directory Strucutre__
+__Working Directory Structure__
 ```
 ├── lecture1
 │   ├── messages
@@ -116,7 +116,7 @@ __Code__
 en-us.txt  es-mx.txt  zh-cn.txt  zh-tw.txt
 ```
 
-__Working Directory Strucutre__
+__Working Directory Structure__
 ```
 ├── lecture1
 │   ├── messages
@@ -143,7 +143,7 @@ Error: Could not find or load main class messages.
 Caused by: java.lang.ClassNotFoundException: messages.
 ```
 
-__Working Directory Strucutre__
+__Working Directory Structure__
 ```
 ├── lecture1
 │   ├── messages
@@ -170,7 +170,7 @@ __Code__
 [user@sahara ~/lecture1]$ 
 ```
 
-__Working Directory Strucutre__
+__Working Directory Structure__
 ```
 ├── lecture1
 │   ├── messages
@@ -196,7 +196,7 @@ __Code__
 Hello World!
 ```
 
-__Working Directory Strucutre__
+__Working Directory Structure__
 ```
 ├── lecture1
 │   ├── messages
@@ -231,7 +231,7 @@ public class Hello {
   }
 ```
 
-__Working Directory Strucutre__
+__Working Directory Structure__
 ```
 ├── lecture1
 │   ├── messages
