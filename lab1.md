@@ -68,7 +68,7 @@ __Working Directory Structure__
 ├── lecture1
 │   ├── messages
 │   │   ├── en-us.txt
-|   │   ├── es-mx.txt
+│   │   ├── es-mx.txt
 │   │   ├── zh-cn.txt
 │   │   ├── zh-tw.txt
 │   ├── Hello.class
@@ -95,7 +95,7 @@ __Working Directory Structure__
 ├── lecture1
 │   ├── messages
 │   │   ├── en-us.txt
-|   │   ├── es-mx.txt
+│   │   ├── es-mx.txt
 │   │   ├── zh-cn.txt
 │   │   ├── zh-tw.txt
 │   ├── Hello.class
@@ -121,7 +121,7 @@ __Working Directory Structure__
 ├── lecture1
 │   ├── messages
 │   │   ├── en-us.txt
-|   │   ├── es-mx.txt
+│   │   ├── es-mx.txt
 │   │   ├── zh-cn.txt
 │   │   ├── zh-tw.txt
 │   ├── Hello.class
@@ -148,7 +148,7 @@ __Working Directory Structure__
 ├── lecture1
 │   ├── messages
 │   │   ├── en-us.txt
-|   │   ├── es-mx.txt
+│   │   ├── es-mx.txt
 │   │   ├── zh-cn.txt
 │   │   ├── zh-tw.txt
 │   ├── Hello.class
@@ -175,7 +175,7 @@ __Working Directory Structure__
 ├── lecture1
 │   ├── messages
 │   │   ├── en-us.txt
-|   │   ├── es-mx.txt
+│   │   ├── es-mx.txt
 │   │   ├── zh-cn.txt
 │   │   ├── zh-tw.txt
 │   ├── Hello.class
@@ -201,7 +201,7 @@ __Working Directory Structure__
 ├── lecture1
 │   ├── messages
 │   │   ├── en-us.txt
-|   │   ├── es-mx.txt
+│   │   ├── es-mx.txt
 │   │   ├── zh-cn.txt
 │   │   ├── zh-tw.txt
 │   ├── Hello.class
@@ -236,7 +236,7 @@ __Working Directory Structure__
 ├── lecture1
 │   ├── messages
 │   │   ├── en-us.txt
-|   │   ├── es-mx.txt
+│   │   ├── es-mx.txt
 │   │   ├── zh-cn.txt
 │   │   ├── zh-tw.txt
 │   ├── Hello.class
