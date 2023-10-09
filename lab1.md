@@ -157,7 +157,7 @@ __Working Directory Structure__
 ```
 
 __Why this output?__
-> The java command is used to compile and run .java files or run .class files. Since we specify a directory and there is no main class named "messages" inside "lecture1/", an error is displayed to tell the user that there is no class found named "messages".
+> The java command is used to run .class files. Since we specify a directory and there is no main class named "messages" inside "lecture1/", an error is displayed to tell the user that there is no class found named "messages".
 
 __Error? If so, why it's an error__
 > Yes, there is an error caused by ClassNotFoundException as there is no single messages.class file inside the current directory. 
@@ -210,7 +210,7 @@ __Working Directory Structure__
 ```
 
 __Why this output?__
-> The java command is used to compile and run .java files or run .class files. The first argument is "Hello" which specify which .class file we're executing. The second argument is "messages/en-us.txt" which specify for the text to be printed out by the java program. The displayed "Hello World!" is the text inside the en-us.txt. 
+> The java command is used to run .class files. The first argument is "Hello" which specify which .class file we're executing. The second argument is "messages/en-us.txt" which specify for the text to be printed out by the java program. The displayed "Hello World!" is the text inside the en-us.txt. 
 
 __Error? If so, why it's an error__
 > No, this is not an error.
