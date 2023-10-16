@@ -68,9 +68,13 @@ public class StringServer {
 # Part 2
 ## Path to private key
 `C:\Users\Jaspe/.ssh/id_rsa`
+![ls private key](/lab2/ls_private_key.png)
+
 
 ## Path to public key
 `/home/linux/ieng6/cs15lfa23/cs15lfa23gd/.ssh/authorized_keys`
+![ls public key](/lab2/ls_public_key.png)
+
 
 ## A terminal interaction where you log into ieng6 with your course-specific account without being asked for a password.
 ![interation image](/lab2/part2-terminal-screenshot.png)
