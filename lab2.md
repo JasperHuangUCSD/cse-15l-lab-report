@@ -58,6 +58,12 @@ public class StringServer {
 
 ## /add-message?s=How are you
 ![How are you](/lab2/how_are_you.png)
+- Which methods in your code are called?
+  - The method called in my code is handleRequest()
+- What are the relevant arguments to those methods, and the values of any relevant fields of the class?
+  - The relevant argument is url with the class of URI, and the values of any relevant fields are string (class:String) and count (class:int)
+- How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+  - The string is added
 
 # Part 2
 ## Path to private key
@@ -65,3 +71,9 @@ public class StringServer {
 
 ## Path to public key
 `/home/linux/ieng6/cs15lfa23/cs15lfa23gd/.ssh/authorized_keys`
+
+## A terminal interaction where you log into ieng6 with your course-specific account without being asked for a password.
+![interation image](/lab2/part2-terminal-screenshot.png)
+
+# Part 3
+> During week 2 and week 3, I learned how to connect to remote server with ssh using private and public key that I haven't use nor learn before, which I found it interesting of how ssh can use public-key cryptography to verify the connection without password. 
