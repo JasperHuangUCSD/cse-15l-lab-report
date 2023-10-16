@@ -17,9 +17,11 @@ interface URLHandler {
 
 class ServerHttpHandler implements HttpHandler {
     URLHandler handler;
+
     ServerHttpHandler(URLHandler handler) {
-      this.handler = handler;
+        this.handler = handler;
     }
+
     public void handle(final HttpExchange exchange) throws IOException {
         // form return body after being handled by program
         try {
@@ -29,7 +31,7 @@ class ServerHttpHandler implements HttpHandler {
             OutputStream os = exchange.getResponseBody();
             os.write(ret.getBytes());
             os.close();
-        } catch(Exception e) {
+        } catch (Exception e) {
             String response = e.toString();
             exchange.sendResponseHeaders(500, response.getBytes().length);
             OutputStream os = exchange.getResponseBody();
