@@ -156,7 +156,7 @@ en-us.txt  es-mx.txt  zh-cn.txt  zh-tw.txt
 
 **Why this output?**
 
-> The `ls` command print out all the files and directory inside the folder we specify. Since an argument of directory `messages/` is added after the `ls` command, the files printed out is the files and directories inside the directory `messages/` which is `en-us.txt es-mx.txt zh-cn.txt zh-tw.txt`.
+> The `ls` command prints out all the files and directory inside the folder we specify. Since an argument of directory `messages/` is added after the `ls` command, the files printed out is the files and directories inside the directory `messages/` which is `en-us.txt es-mx.txt zh-cn.txt zh-tw.txt`.
 
 **Error? If so, why it's an error**
 
