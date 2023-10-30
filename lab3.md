@@ -5,10 +5,12 @@
 ### Associated Code
 
 ```java
-// Changes the input array to be in reversed order
-static void reverseInPlace(int[] arr) {
-    for(int i = 0; i < arr.length; i += 1) {
-        arr[i] = arr[arr.length - i - 1];
+public class ArrayExamples {
+    // Changes the input array to be in reversed order
+    static void reverseInPlace(int[] arr) {
+        for(int i = 0; i < arr.length; i += 1) {
+            arr[i] = arr[arr.length - i - 1];
+        }
     }
 }
 ```
@@ -91,3 +93,26 @@ static void reverseInPlace(int[] arr) {
 > The fix addresses the issue because the value is updated without storing the previous value. Before the temp variable is added and the loop is loop only for half of the array, the `arr[i] = arr[arr.length - i - 1];` directly override the value that we need to save it and interchange it. By loop through only half of the array and switch the elements between each other with the value stored in the `temp` first address the problem that the method change the array value with the wrong way.
 
 ## Part 2
+
+### Command Interested `find`
+
+#### First Option: `find -iname [name]`
+
+1. First Example
+
+```bash
+jasperhuang@Jasper-Surface:/mnt/c/Users/Jaspe/Desktop/github_repo/cse-15l-lab/lab5/docsearch$ find -iname "*result*txt"
+./find-results.txt
+./grep-results.txt
+```
+
+2. Second Example
+
+```bash
+jasperhuang@Jasper-Surface:/mnt/c/Users/Jaspe/Desktop/github_repo/cse-15l-lab/lab5/docsearch$ find -iname "*0023*txt"
+./technical/biomed/gb-2002-3-5-research0023.txt
+./technical/plos/pmed.0010023.txt
+./technical/plos/pmed.0020023.txt
+```
+
+> The `-iname` option help you search for the file while not knowing the complete file name of that file. It is useful when you forgot the entire file name and you're trying to find the file inside a large amount of files and directories.
