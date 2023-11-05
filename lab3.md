@@ -101,14 +101,14 @@ static void reverseInPlace(int[] arr) {
 1. First Example (Folder)
 
 ```bash
-jasperhuang@Jasper-Surface:/mnt/c/Users/Jaspe/Desktop/github-repo/cse-15l-lab/lab5/docsearch$ find ./technical -iname "*t_lsc*"
+jasperhuang@Jasper-Surface:/github-repo/cse-15l-lab/lab5/docsearch$ find ./technical -iname "*t_lsc*"
 ./technical/government/About_LSC
 ```
 
 2. Second Example (File)
 
 ```bash
-jasperhuang@Jasper-Surface:/mnt/c/Users/Jaspe/Desktop/github-repo/cse-15l-lab/lab5/docsearch$ find ./technical -iname "*0023*TxT"
+jasperhuang@Jasper-Surface:/github-repo/cse-15l-lab/lab5/docsearch$ find ./technical -iname "*0023*TxT"
 ./technical/biomed/gb-2002-3-5-research0023.txt
 ./technical/plos/pmed.0010023.txt
 ./technical/plos/pmed.0020023.txt
@@ -121,7 +121,7 @@ jasperhuang@Jasper-Surface:/mnt/c/Users/Jaspe/Desktop/github-repo/cse-15l-lab/la
 1. First Example (Folder)
 
 ```bash
-jasperhuang@Jasper-Surface:/mnt/c/Users/Jaspe/Desktop/github-repo/cse-15l-lab/lab5/docsearch$ find ./technical -type d
+jasperhuang@Jasper-Surface:/github-repo/cse-15l-lab/lab5/docsearch$ find ./technical -type d
 technical/
 technical/911report
 technical/biomed
@@ -138,7 +138,7 @@ technical/plos
 2. Second Example (File)
 
 ```bash
-jasperhuang@Jasper-Surface:/mnt/c/Users/Jaspe/Desktop/github-repo/cse-15l-lab/lab5/docsearch$ find ./technical -type f -name "*go*"
+jasperhuang@Jasper-Surface:/github-repo/cse-15l-lab/lab5/docsearch$ find ./technical -type f -name "*go*"
 technical/government/Media/Ginny_Kilgore.txt
 technical/government/Media/Oregon_Poor.txt
 ```
@@ -150,14 +150,14 @@ technical/government/Media/Oregon_Poor.txt
 1. First Example (Folder)
 
 ```bash
-jasperhuang@Jasper-Surface:/mnt/c/Users/Jaspe/Desktop/github-repo/cse-15l-lab/lab5/docsearch$ find ./technical -maxdepth 1 -name "*os*"
+jasperhuang@Jasper-Surface:/github-repo/cse-15l-lab/lab5/docsearch$ find ./technical -maxdepth 1 -name "*os*"
 ./technical/plos
 ```
 
 2. Second Example (File)
 
 ```bash
-jasperhuang@Jasper-Surface:/mnt/c/Users/Jaspe/Desktop/github-repo/cse-15l-lab/lab5/docsearch$ find ./technical -maxdepth 2 -name "*123*"
+jasperhuang@Jasper-Surface:/github-repo/cse-15l-lab/lab5/docsearch$ find ./technical -maxdepth 2 -name "*123*"
 ./technical/plos/pmed.0020123.txt
 ```
 
@@ -168,14 +168,14 @@ jasperhuang@Jasper-Surface:/mnt/c/Users/Jaspe/Desktop/github-repo/cse-15l-lab/la
 1. First Example (Folder)
 
 ```bash
-jasperhuang@Jasper-Surface:/mnt/c/Users/Jaspe/Desktop/github-repo/cse-15l-lab/lab5/docsearch$ find ./technical -ipath "*About*" -type d
+jasperhuang@Jasper-Surface:/github-repo/cse-15l-lab/lab5/docsearch$ find ./technical -ipath "*About*" -type d
 ./technical/government/About_LSC
 ```
 
 2. Second Example (File)
 
 ```bash
-jasperhuang@Jasper-Surface:/mnt/c/Users/Jaspe/Desktop/github-repo/cse-15l-lab/lab5/docsearch$ find ./technical -ipath "*Media*" -iname "*cu*"
+jasperhuang@Jasper-Surface:/github-repo/cse-15l-lab/lab5/docsearch$ find ./technical -ipath "*Media*" -iname "*cu*"
 ./technical/government/Media/Avoids_Budget_Cut.txt
 ./technical/government/Media/Funding_cuts_force.txt
 ./technical/government/Media/Too_Crucial_to_Take_Cut.txt
