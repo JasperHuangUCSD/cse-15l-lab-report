@@ -98,21 +98,89 @@ static void reverseInPlace(int[] arr) {
 
 #### First Option: `find -iname [name]`
 
-1. First Example
+1. First Example (Folder)
 
 ```bash
-jasperhuang@Jasper-Surface:/mnt/c/Users/Jaspe/Desktop/github_repo/cse-15l-lab/lab5/docsearch$ find -iname "*result*txt"
-./find-results.txt
-./grep-results.txt
+jasperhuang@Jasper-Surface:/mnt/c/Users/Jaspe/Desktop/github-repo/cse-15l-lab/lab5/docsearch$ find ./technical -iname "*t_lsc*"
+./technical/government/About_LSC
 ```
 
-2. Second Example
+2. Second Example (File)
 
 ```bash
-jasperhuang@Jasper-Surface:/mnt/c/Users/Jaspe/Desktop/github_repo/cse-15l-lab/lab5/docsearch$ find -iname "*0023*txt"
+jasperhuang@Jasper-Surface:/mnt/c/Users/Jaspe/Desktop/github-repo/cse-15l-lab/lab5/docsearch$ find ./technical -iname "*0023*TxT"
 ./technical/biomed/gb-2002-3-5-research0023.txt
 ./technical/plos/pmed.0010023.txt
 ./technical/plos/pmed.0020023.txt
 ```
 
-> The `-iname` option help you search for the file while not knowing the complete file name of that file. It is useful when you forgot the entire file name and you're trying to find the file inside a large amount of files and directories.
+> The `-iname` option help you search for the file while not knowing the complete file name of that file. It is useful when you forgot the entire file name (especially if you don't know the case as using `-name` is case sensitive compare to `-iname` which is not case sensitive) and you're trying to find the file inside a large amount of files and directories.
+
+#### Second Option: `find -type [type]`
+
+1. First Example (Folder)
+
+```bash
+jasperhuang@Jasper-Surface:/mnt/c/Users/Jaspe/Desktop/github-repo/cse-15l-lab/lab5/docsearch$ find ./technical -type d
+technical/
+technical/911report
+technical/biomed
+technical/government
+technical/government/About_LSC
+technical/government/Alcohol_Problems
+technical/government/Env_Prot_Agen
+technical/government/Gen_Account_Office
+technical/government/Media
+technical/government/Post_Rate_Comm
+technical/plos
+```
+
+2. Second Example (File)
+
+```bash
+jasperhuang@Jasper-Surface:/mnt/c/Users/Jaspe/Desktop/github-repo/cse-15l-lab/lab5/docsearch$ find ./technical -type f -name "*go*"
+technical/government/Media/Ginny_Kilgore.txt
+technical/government/Media/Oregon_Poor.txt
+```
+
+> The `-type` option help list out only the type of files that you want to find from, recursively from the entire folder specify. Some types support including directory, block, character, regular file, socket, or named pipe. It is useful when you don't want to files other than regular files or directories while using the find command.
+
+#### Third Option: `find -maxdepth [depth]`
+
+1. First Example (Folder)
+
+```bash
+jasperhuang@Jasper-Surface:/mnt/c/Users/Jaspe/Desktop/github-repo/cse-15l-lab/lab5/docsearch$ find ./technical -maxdepth 1 -name "*os*"
+./technical/plos
+```
+
+2. Second Example (File)
+
+```bash
+jasperhuang@Jasper-Surface:/mnt/c/Users/Jaspe/Desktop/github-repo/cse-15l-lab/lab5/docsearch$ find ./technical -maxdepth 2 -name "*123*"
+./technical/plos/pmed.0020123.txt
+```
+
+> The `-maxdepth` option help limit the search scope to not over the certain number of directory that you want to search in depth. It is useful when you only want to look for folder within a certain depth instead of all the subfolders in all depth, which is sometimes unnecessary to do that.
+
+#### Fourth Option: `find -ipath [path]`
+
+1. First Example (Folder)
+
+```bash
+jasperhuang@Jasper-Surface:/mnt/c/Users/Jaspe/Desktop/github-repo/cse-15l-lab/lab5/docsearch$ find ./technical -ipath "*About*" -type d
+./technical/government/About_LSC
+```
+
+2. Second Example (File)
+
+```bash
+jasperhuang@Jasper-Surface:/mnt/c/Users/Jaspe/Desktop/github-repo/cse-15l-lab/lab5/docsearch$ find ./technical -ipath "*Media*" -iname "*cu*"
+./technical/government/Media/Avoids_Budget_Cut.txt
+./technical/government/Media/Funding_cuts_force.txt
+./technical/government/Media/Too_Crucial_to_Take_Cut.txt
+```
+
+> The `-ipath` option help you search for files within a path string that you put as value. It is useful when you want to look for files or directory inside a certain directory but you can't remember where is the directory located.
+
+> All options above sourced from "https://www.redhat.com/sysadmin/linux-find-command" and also `man find`
