@@ -54,7 +54,7 @@ bash<space>t<tab><enter>
 
 Explanation:
 
-> First use `cd` command to go in the directory we just clone. Since only `lab7` directory start with `l`, type `l` and then `<tab>` to auto-complete the directory name. We then run the `test.sh` file by first type `bash`, and then type `t` and then `<tab>` to auto-complete the file name since only `test.sh` start with `t`.
+> First use `cd` command to go in the directory we just clone. Since only `lab7` directory start with `l`, type `l` and then `<tab>` to auto-complete the directory name and press `enter` to execute. We then run the `test.sh` file by first type `bash`, and then type `t` and then `<tab>` to auto-complete the file name since only `test.sh` start with `t`.
 
 ## Step 7
 
@@ -65,6 +65,10 @@ Key pressed:
 ```
 vim<space>L<tab>.<tab><enter>
 ```
+
+Explanation:
+
+> First type `vim` command to open the vim editor for the .java file. Specify the file to open by first type `L` to specify the file name and `tab` to auto complete to `ListExamples`, then type `.` and `tab` to specify the file name to `ListExamples.java` instead of `ListExamplesTests.java`.
 
 ![Step 7-1 ScreenShot](/lab4-img/step-7-2.png)
 
@@ -81,6 +85,10 @@ i
 :x<enter>
 ```
 
+Explanation:
+
+> First type `:set number<enter>` to make the vim editor to display the line number. Sednd, use `44gg` to jump the cursor to line 44 since the code we want to fix is at line 44. After that, the `e` command move to the very end of the word `index1`, and change the mode to insert mode using `i` command. Then, we delete the number 1 with `<delete>` and type the number `2` in. Finally, we save the file by changing the mode to the normal mode by pressing `esc`, and save and quit the vim editor by typing `:x<enter>`.
+
 ## Step 8
 
 ![Step 8 ScreenShot](/lab4-img/step-8.png)
@@ -91,6 +99,10 @@ Key pressed:
 bash<space>t<tab><enter>
 ```
 
+Explanation:
+
+> We use the `bash` command to run the `test.sh` bash script, which we first type `bash<space>t` and auto-complete the file name by typing `<tab>` and then `<enter>` to execute the command.
+
 ## Step 9
 
 ![Step 9 ScreenShot](/lab4-img/step-9.png)
@@ -98,6 +110,10 @@ Key pressed:
 
 ```
 git<space>add<space>.<enter>
-git<space>commit<space>-m<space>"fix error"<enter>
+git<space>commit<space>-m<space>"fix<space>error"<enter>
 git<space>push<enter>
 ```
+
+Explanation:
+
+> First we type out `git<space>add<space>.<add>` to add all the files in the directory to git. Then, we type out `git<space>commit<space>-m<space>` follow with the commit message `"fix<space>error"` and `<enter>` to execute the command. Lastly, we type `git<space>push<enter>` to push the changes to the directory to github.
